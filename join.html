@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join Strength SMP - Two methods to connect to the server.">
+    <title>Join | Strength SMP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">Strength SMP</a>
+            <ul class="navbar-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="smp.html" class="nav-link">SMP</a></li>
+                <li><a href="join.html" class="nav-link active">Join</a></li>
+                <li><a href="discord.html" class="nav-link">Discord</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-overlay"></div>
+    <div class="mobile-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="smp.html" class="nav-link">SMP</a>
+        <a href="join.html" class="nav-link active">Join</a>
+        <a href="discord.html" class="nav-link">Discord</a>
+    </div>
+
+    <!-- Main Content -->
+    <main class="page-container">
+        <section class="section">
+            <div class="section-container">
+                <h1 class="section-title">Join Strength SMP</h1>
+                <p class="text-center mb-xl"
+                    style="color: var(--text-secondary); max-width: 700px; margin-left: auto; margin-right: auto;">
+                    Choose your preferred method to connect to the server. We recommend Method 2 for the best
+                    experience.
+                </p>
+
+                <!-- Method 1: Strength SMP Mod -->
+                <div class="join-method">
+                    <div class="join-method-header">
+                        <div class="method-number">1</div>
+                        <h2 class="method-title">Strength SMP Mod</h2>
+                        <div class="ip-box">
+                            <span class="ip-label">Server IP:</span>
+                            <span class="ip-highlight" onclick="copyToClipboard('play.priyam.space', this)"
+                                title="Click to copy">
+                                play.priyam.space <span class="copy-icon">📋</span>
+                            </span>
+                        </div>
+                        <span class="method-badge">High Ping</span>
+                    </div>
+
+                    <div class="ability-card-content">
+                        <div class="ability-item">
+                            <strong>Minecraft 1.21.4</strong> → Download the mod and place it in Fabric mods folder
+                        </div>
+                        <div class="ability-item">
+                            <strong>Minecraft 1.21.8</strong> → Download the mod and place it in Fabric mods folder
+                        </div>
+                    </div>
+
+                    <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem;">
+                        <a href="strengthsmp-1.21.4.jar" class="btn btn-primary" download>
+                            Download Mod For (1.21.4)
+                        </a>
+                        <a href="strengthsmp-1.21.8.jar" class="btn btn-secondary" download>
+                            Download Mod For (1.21.8)
+                        </a>
+                    </div>
+
+                    <div class="warning-box">
+                        <div class="warning-box-title">⚠️ Note</div>
+                        <p>You may experience high ping or lag with this method.</p>
+                    </div>
+                </div>
+
+                <!-- Method 2: ZeroTier -->
+                <div class="join-method">
+                    <div class="join-method-header">
+                        <div class="method-number">2</div>
+                        <h2 class="method-title">ZeroTier</h2>
+                        <div class="ip-box">
+                            <span class="ip-label">Server IP:</span>
+                            <span class="ip-highlight" onclick="copyToClipboard('10.75.72.15:25565', this)"
+                                title="Click to copy">
+                                10.75.72.15:25565 <span class="copy-icon">📋</span>
+                            </span>
+                        </div>
+                        <span class="method-badge"
+                            style="background: rgba(0, 200, 83, 0.2); border-color: #00c853; color: #00c853;">Recommended</span>
+                    </div>
+
+                    <!-- Video Tutorial Section -->
+                    <div class="tutorial-video-section">
+                        <h3 class="tutorial-label">Video Tutorial:</h3>
+                        <video class="tutorial-video" controls>
+                            <source src="tutorial.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+                    <!-- Steps Tutorial Section -->
+                    <h3 class="tutorial-label" style="margin-top: 2rem;">Steps Tutorial:</h3>
+                    <div class="join-steps">
+                        <div class="join-step">
+                            <div>
+                                Go to <a href="https://www.zerotier.com/download/" target="_blank" class="text-crimson"
+                                    style="text-decoration: underline;">https://www.zerotier.com/download/</a> and
+                                Download <strong>MSI Installer (x86/x64)</strong>
+                            </div>
+                        </div>
+                        <div class="join-step">
+                            <div>After installing <strong>MSI Installer (x86/x64)</strong> install it from file explorer
+                            </div>
+                        </div>
+                        <div class="join-step">
+                            <div>After installation is done, it should be visible in system tray the "up arrow icon" in
+                                your taskbar. If not, search it on the windows search bar and open it.</div>
+                        </div>
+                        <div class="join-step">
+                            <div>Open the system tray icon and right click on the <strong class="text-crimson">ZeroTier
+                                    icon</strong> and click on "Start UI at login" right click again on zerotier and
+                                make sure its checked.
+                            </div>
+                        </div>
+
+
+                        <div class="join-step">
+                            <div>Then right click the icon and click on "Join New Network" and paste the id given below
+                                in it and click Join.
+                            </div>
+                        </div>
+                    </div>
+
+                    <p style="margin: 1.5rem 0 0.5rem; color: var(--text-secondary);">Join Network ID:</p>
+                    <div class="code-box-wrapper">
+                        <div class="code-box" id="network-id">166359304ecc3eb0</div>
+                        <button class="copy-btn" onclick="copyToClipboard('166359304ecc3eb0', this)">📋 Copy</button>
+                    </div>
+
+                    <div class="join-step">
+                        <div>That's it, now you can join the server from the <strong>IP given below</strong>
+                        </div>
+                    </div>
+
+                    <p style="margin: 1.5rem 0 0.5rem; color: var(--text-secondary);">Join using this IP:</p>
+                    <div class="code-box-wrapper">
+                        <div class="code-box" id="server-ip">10.75.72.15:25565</div>
+                        <button class="copy-btn" onclick="copyToClipboard('10.75.72.15:25565', this)">📋 Copy</button>
+                    </div>
+
+
+                    <div class="warning-box"
+                        style="background: rgba(0, 200, 83, 0.1); border-color: rgba(0, 200, 83, 0.4);">
+                        <div class="warning-box-title" style="color: #00c853;">✅ Important Note</div>
+                        <p>ZeroTier gives <strong>better ping</strong> and <strong>smoother gameplay</strong>.</p>
+                        <p>If uncomfortable, you may use Method 1 instead.</p>
+                        <p>You can research ZeroTier or ask other players.</p>
+                        <p><strong>The choice is yours.</strong></p>
+                    </div>
+                </div>
+
+                <div class="text-center mt-xl">
+                    <a href="smp.html" class="btn btn-secondary">← Back to SMP</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer-text">© 2025 <span>Strength SMP</span>. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
